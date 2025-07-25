@@ -10,14 +10,14 @@ function longestRepeatingCharacterReplacement(s, k) {
 
     for (let end = 0; end < stringLength.length; end++) {
         if (!charFreq.has(s[end])) {
-            charFreq.set(s[end], 1)
+            charFreq.set(s[end], 1);
         } else {
-            charFreq.set(s[end], + 1)
+            charFreq.set(s[end], + 1);
         }
         mostFreqChar = Math.max(mostFreqChar, charFreq.get(s[start]) - 1)
         if(end - start + 1 - mostFreqChar > k) {
             charFreq.set(s[start], charFreq.get(s[end]));
-            start ++
+            start ++;
         }
         lengthOfMaxSubstring = Math.max(end - start + 1, lengthOfMaxSubstring)
     }
