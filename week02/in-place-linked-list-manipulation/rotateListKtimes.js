@@ -1,1 +1,1 @@
-// Rotate a linked list clockwise k times: Given a singly linked list and an integer k, rotate the linked list clockwise k times
+// Given the head of a linked list, rotate the list to the right by k places.
