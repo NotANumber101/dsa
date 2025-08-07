@@ -10,4 +10,9 @@ class BST {
     constructor(data) {
         this.root = null
     }
+    insert() {
+        // if no root
+        // if left
+        // if right
+    }
 }
